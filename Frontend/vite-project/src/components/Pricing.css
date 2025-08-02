@@ -1,0 +1,157 @@
+.pricing {
+  padding: 80px 0;
+  background: #F7F7F7;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.pricing-card {
+  background: #FFFFFF;
+  border-radius: 40px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 639px;
+}
+
+.pricing-card.featured {
+  background: #FFDD81;
+}
+
+.pricing-card-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.plan-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.33;
+  color: #303030;
+  margin-bottom: 10px;
+}
+
+.plan-description {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.plan-price {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.33;
+  color: #303030;
+}
+
+.pricing-features {
+  flex-grow: 1;
+  margin-bottom: 40px;
+}
+
+.pricing-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-features li {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #303030;
+  margin-bottom: 15px;
+  padding-left: 0;
+}
+
+.pricing-features li:before {
+  content: "✓";
+  margin-right: 10px;
+  color: #303030;
+}
+
+.pricing-card .btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .pricing-card:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 60px 0;
+  }
+  
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .pricing-card {
+    min-height: auto;
+    padding: 30px;
+  }
+  
+  .pricing-card:nth-child(3) {
+    grid-column: 1;
+    max-width: none;
+  }
+  
+  .plan-name {
+    font-size: 32px;
+  }
+  
+  .plan-price {
+    font-size: 32px;
+  }
+  
+  .pricing-features li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-card {
+    padding: 25px;
+  }
+  
+  .plan-name {
+    font-size: 28px;
+  }
+  
+  .plan-price {
+    font-size: 28px;
+  }
+  
+  .pricing-features li {
+    font-size: 15px;
+  }
+} 

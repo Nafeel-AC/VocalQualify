@@ -1,0 +1,121 @@
+.facilitators {
+  padding: 80px 0;
+  background: #F7F7F7;
+}
+
+.facilitators-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.facilitators-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.facilitator-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.facilitator-image {
+  width: 310px;
+  height: 310px;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.facilitator-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.facilitator-info {
+  max-width: 310px;
+}
+
+.facilitator-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.33;
+  color: #303030;
+  margin-bottom: 10px;
+}
+
+.facilitator-title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.facilitator-description {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #303030;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .facilitators-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  
+  .facilitator-image {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .facilitators {
+    padding: 60px 0;
+  }
+  
+  .facilitators-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .facilitator-image {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .facilitator-name {
+    font-size: 32px;
+  }
+  
+  .facilitator-title {
+    font-size: 14px;
+  }
+  
+  .facilitator-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .facilitator-image {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .facilitator-name {
+    font-size: 28px;
+  }
+  
+  .facilitator-description {
+    font-size: 15px;
+  }
+} 

@@ -1,0 +1,196 @@
+.how-it-works {
+  padding: 80px 0;
+  background: #F7F7F7;
+}
+
+.how-it-works-header {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.how-it-works-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.step {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.step-number {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1.33;
+  color: #303030;
+  flex-shrink: 0;
+}
+
+.step-content h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #303030;
+  margin-bottom: 15px;
+}
+
+.step-content p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #303030;
+}
+
+.how-it-works-image {
+  position: relative;
+}
+
+.how-it-works-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+.image-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.star-decoration {
+  position: absolute;
+  width: 248px;
+  height: 248px;
+  background: #FFDD81;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  top: 20%;
+  left: 10%;
+  transform: rotate(45deg);
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #303030;
+  border-radius: 50%;
+}
+
+.whats-included {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.whats-included h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.included-content p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #303030;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .how-it-works-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .how-it-works-header {
+    text-align: center;
+  }
+  
+  .step {
+    gap: 20px;
+  }
+  
+  .step-number {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 60px 0;
+  }
+  
+  .how-it-works-content {
+    gap: 40px;
+  }
+  
+  .steps-container {
+    gap: 30px;
+  }
+  
+  .step {
+    gap: 15px;
+  }
+  
+  .step-number {
+    font-size: 36px;
+  }
+  
+  .step-content h3 {
+    font-size: 14px;
+  }
+  
+  .step-content p {
+    font-size: 16px;
+  }
+  
+  .whats-included {
+    padding: 30px;
+  }
+  
+  .included-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .step-number {
+    font-size: 32px;
+  }
+  
+  .whats-included {
+    padding: 25px;
+  }
+} 

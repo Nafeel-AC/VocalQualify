@@ -1,0 +1,161 @@
+.about {
+  padding: 80px 0;
+  background: #F7F7F7;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-text {
+  grid-column: 1;
+}
+
+.about-description {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #303030;
+  margin-bottom: 40px;
+  max-width: 560px;
+}
+
+.about-image {
+  grid-column: 2;
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+.about-image-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.about-image .star-decoration {
+  position: absolute;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.about-image .star-1 {
+  width: 68px;
+  height: 86px;
+  bottom: 20px;
+  left: 20px;
+  transform: rotate(45deg);
+}
+
+.about-image .star-2 {
+  width: 97px;
+  height: 122px;
+  top: 20px;
+  right: 20px;
+  transform: rotate(-30deg);
+}
+
+.about-features {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.feature-card {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.feature-card p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #303030;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .about-text {
+    grid-column: 1;
+    text-align: center;
+  }
+  
+  .about-image {
+    grid-column: 1;
+  }
+  
+  .about-features {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+  
+  .about-content {
+    gap: 40px;
+  }
+  
+  .about-description {
+    font-size: 16px;
+  }
+  
+  .feature-card {
+    padding: 30px;
+  }
+  
+  .feature-card h3 {
+    font-size: 14px;
+  }
+  
+  .feature-card p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    gap: 30px;
+  }
+  
+  .about-features {
+    gap: 20px;
+  }
+  
+  .feature-card {
+    padding: 25px;
+  }
+} 

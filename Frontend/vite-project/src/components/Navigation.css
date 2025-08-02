@@ -1,0 +1,96 @@
+.navigation {
+  background: #FFFFFF;
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 1px solid #E5E5E5;
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-logo h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #303030;
+  text-transform: lowercase;
+  margin: 0;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #303030;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FFDD81;
+}
+
+.nav-auth {
+  display: flex;
+  align-items: center;
+}
+
+.nav-auth .nav-link {
+  padding: 12px 24px;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: #FFFFFF;
+  color: #303030;
+}
+
+.nav-auth .nav-link:hover {
+  background-color: #303030;
+  color: #FFFFFF;
+  border-color: #303030;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nav-menu {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-logo h1 {
+    font-size: 32px;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu {
+    gap: 15px;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+  }
+} 
