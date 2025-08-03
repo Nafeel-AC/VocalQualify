@@ -6,8 +6,8 @@ const Hero: React.FC = () => {
   return (
     <section className="hero" id="home">
       <div className="container">
-        <div className="hero-content">
-          <div className="hero-text">
+        <div className="hero-content scroll-scale-in">
+          <div className="hero-text scroll-fade-left">
             <h1 className="hero-title">
               <span className="hero-title-emphasis">AI-Powered</span> Voice-Based Lead Qualification
             </h1>
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
           
-          <div className="hero-image-container">
+          <div className="hero-image-container scroll-fade-right">
             <div className="hero-image-wrapper">
               <img src={heroImage} alt="VocalQualify AI Lead Qualification" className="hero-image" />
               <div className="hero-image-decoration">

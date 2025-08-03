@@ -1,6 +1,7 @@
 .about {
-  background-color: #F5F5F5;
+  background-color: var(--bg-primary);
   padding: 40px 0;
+  transition: background-color 0.3s ease;
 }
 
 .about-header {
@@ -14,8 +15,9 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 20px;
+  transition: color 0.3s ease;
 }
 
 .section-title {
@@ -23,8 +25,9 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 1.2;
-  color: #303030;
+  color: var(--text-primary);
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .title-emphasis {
@@ -76,8 +79,9 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 15px;
+  transition: color 0.3s ease;
 }
 
 .about-features {
@@ -87,36 +91,40 @@
 }
 
 .feature-card {
-  background: #FFFFFF;
-  border: 1px solid #303030;
+  background: var(--bg-card);
+  border: 1px solid var(--text-primary);
   border-radius: 16px;
   padding: 28px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .feature-card h3 {
   font-family: 'Work Sans', sans-serif;
   font-size: 15px;
   font-weight: 700;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  transition: color 0.3s ease;
 }
 
 .feature-card p {
   font-family: 'Work Sans', sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  color: #303030;
+  color: var(--text-primary);
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .star-decoration {
   position: absolute;
-  background: #FFFFFF;
-  border: 1px solid #303030;
+  background: var(--bg-card);
+  border: 1px solid var(--text-primary);
   border-radius: 50%;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .star-1 {

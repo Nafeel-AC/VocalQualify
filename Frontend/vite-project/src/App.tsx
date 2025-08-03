@@ -11,6 +11,7 @@ import Facilitators from './components/Facilitators';
 import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import { initScrollEffects } from './utils/scrollEffects';
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -26,6 +27,16 @@ function App() {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
   }, [theme]);
+
+  useEffect(() => {
+    // Initialize scroll effects
+    const observer = initScrollEffects();
+    
+    return () => {
+      // Cleanup observer on unmount
+      observer.disconnect();
+    };
+  }, []);
 
   const toggleTheme = () => {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');

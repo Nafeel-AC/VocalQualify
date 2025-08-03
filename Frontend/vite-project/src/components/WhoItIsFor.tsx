@@ -7,12 +7,12 @@ const WhoItIsFor: React.FC = () => {
   return (
     <section className="who-its-for-section" id="who-its-for">
       <div className="container">
-        <h4>WHO IT'S FOR</h4>
-        <h2>Made for <em>Sales Teams Like Yours</em></h2>
+        <h4 className="scroll-fade-in">WHO IT'S FOR</h4>
+        <h2 className="scroll-fade-in">Made for <em>Sales Teams Like Yours</em></h2>
         
         <div className="cards-wrapper">
           {/* Left Card */}
-          <div className="card for-you">
+          <div className="card for-you scroll-fade-left">
             <h3>This <em>Is for You</em> If...</h3>
             <ul>
               <li>You're a <strong>sales team drowning in unqualified leads</strong></li>
@@ -24,7 +24,7 @@ const WhoItIsFor: React.FC = () => {
           </div>
 
           {/* Right Card */}
-          <div className="card not-for-you">
+          <div className="card not-for-you scroll-fade-right">
             <h3>This Is <em>NOT</em> for You If...</h3>
             <ul>
               <li>You're just looking to promote your business</li>

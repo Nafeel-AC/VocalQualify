@@ -1,7 +1,8 @@
 .footer {
-  background-color: #FFDD81;
+  background-color: var(--accent-yellow);
   padding: 80px 0;
   border-radius: 40px 40px 0 0;
+  transition: background-color 0.3s ease;
 }
 
 .footer-content {
@@ -21,9 +22,10 @@
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 40px;
-  color: #303030;
+  color: var(--text-primary);
   text-transform: lowercase;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .footer-links {
@@ -41,7 +43,7 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  color: #303030;
+  color: var(--text-primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -62,12 +64,12 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: var(--bg-card);
   transition: all 0.3s ease;
 }
 
 .social-link:hover {
-  background: #303030;
+  background: var(--text-primary);
 }
 
 .social-link:hover svg path {
@@ -84,8 +86,9 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 18px;
   line-height: 1.33;
-  color: #303030;
+  color: var(--text-primary);
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .footer-right {
@@ -93,10 +96,11 @@
 }
 
 .footer-cta {
-  background: #FFFFFF;
+  background: var(--bg-card);
   border-radius: 24px;
   padding: 40px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 .footer-cta h3 {
@@ -104,16 +108,18 @@
   font-weight: 400;
   font-size: 40px;
   line-height: 1.33;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 20px;
+  transition: color 0.3s ease;
 }
 
 .footer-cta p {
   font-family: 'Work Sans', sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 30px;
+  transition: color 0.3s ease;
 }
 
 .footer-decoration {
@@ -125,9 +131,10 @@
 
 .star-decoration {
   position: absolute;
-  background: #FFFFFF;
-  border: 1px solid #303030;
+  background: var(--bg-card);
+  border: 1px solid var(--text-primary);
   border-radius: 50%;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .footer .star-1 {

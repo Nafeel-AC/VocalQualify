@@ -1,6 +1,7 @@
 .how-it-works {
-  background-color: #F5F5F5;
+  background-color: var(--bg-primary);
   padding: 80px 0;
+  transition: background-color 0.3s ease;
 }
 
 .how-it-works-header {
@@ -18,8 +19,9 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 20px;
+  transition: color 0.3s ease;
 }
 
 .section-title {
@@ -27,8 +29,9 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 1.2;
-  color: #303030;
+  color: var(--text-primary);
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .title-emphasis {
@@ -52,14 +55,16 @@
 .card {
   padding: 30px;
   border-radius: 16px;
-  background-color: white;
+  background-color: var(--bg-card);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   font-family: sans-serif;
+  transition: background-color 0.3s ease;
 }
 
 .apply-online {
   grid-area: apply;
-  background-color: #FFDD81;
+  background-color: var(--accent-yellow);
+  transition: background-color 0.3s ease;
 }
 
 .get-matched {
@@ -90,9 +95,10 @@
   font-size: 48px;
   font-weight: 700;
   font-style: italic;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 15px;
   line-height: 1;
+  transition: color 0.3s ease;
 }
 
 .step-content h3 {
@@ -101,16 +107,18 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 12px;
+  transition: color 0.3s ease;
 }
 
 .step-content p {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #303030;
+  color: var(--text-primary);
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .main-image {
@@ -126,16 +134,18 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 20px;
+  transition: color 0.3s ease;
 }
 
 .included-content p {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   line-height: 1.8;
-  color: #303030;
+  color: var(--text-primary);
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 /* Responsive Design */

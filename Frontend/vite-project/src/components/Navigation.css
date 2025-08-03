@@ -1,8 +1,9 @@
 .navigation {
-  background: #F5F5F5;
+  background: var(--bg-primary);
   padding: 20px 0;
   position: relative;
   z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
 .nav-content {
@@ -18,9 +19,10 @@
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 36px;
-  color: #303030;
+  color: var(--text-primary);
   text-transform: lowercase;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .nav-menu {
@@ -35,13 +37,13 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  color: #303030;
+  color: var(--text-primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #FFDD81;
+  color: var(--accent-yellow);
 }
 
 .nav-auth {
@@ -51,17 +53,17 @@
 
 .nav-auth .nav-link {
   padding: 12px 24px;
-  border: 1px solid #303030;
+  border: 1px solid var(--text-primary);
   border-radius: 8px;
   transition: all 0.3s ease;
-  background: #FFFFFF;
-  color: #303030;
+  background: var(--bg-card);
+  color: var(--text-primary);
 }
 
 .nav-auth .nav-link:hover {
-  background-color: #303030;
-  color: #FFFFFF;
-  border-color: #303030;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
 }
 
 /* Responsive Design */
