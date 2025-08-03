@@ -14,7 +14,7 @@
 }
 
 .section-subtitle {
-  font-family: 'Winky Sans', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -102,7 +102,7 @@
 }
 
 .step-content h3 {
-  font-family: 'Winky Sans', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -113,7 +113,7 @@
 }
 
 .step-content p {
-  font-family: 'Winky Sans', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-primary);
@@ -129,7 +129,7 @@
 }
 
 .whats-included h3 {
-  font-family: 'Winky Sans', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -140,7 +140,7 @@
 }
 
 .included-content p {
-  font-family: 'Winky Sans', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 16px;
   line-height: 1.8;
   color: var(--text-primary);
