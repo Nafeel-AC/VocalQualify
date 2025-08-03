@@ -10,7 +10,7 @@
 }
 
 .section-subtitle {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -76,7 +76,7 @@
 }
 
 .about-description {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: var(--text-primary);
@@ -100,7 +100,7 @@
 }
 
 .feature-card h3 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: var(--text-primary);
@@ -111,7 +111,7 @@
 }
 
 .feature-card p {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 15px;
   line-height: 1.5;
   color: var(--text-primary);

@@ -16,7 +16,7 @@
 }
 
 .section-subtitle {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -82,7 +82,7 @@
 }
 
 .plan-description {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -122,7 +122,7 @@
 }
 
 .pricing-features li {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: var(--text-primary);
@@ -144,7 +144,7 @@
   padding: 14px 28px;
   border: none;
   border-radius: 8px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;

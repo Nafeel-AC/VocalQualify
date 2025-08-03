@@ -23,7 +23,7 @@
 }
 
 .section-subtitle {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -85,7 +85,7 @@
 }
 
 .facilitator-title {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -94,7 +94,7 @@
 }
 
 .facilitator-description {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Winky Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-primary);
