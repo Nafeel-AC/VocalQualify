@@ -1,46 +1,38 @@
 import React from 'react';
 import './WhoItIsFor.css';
-import whoItIsForImage1 from '../assets/images/who-it-is-for-1.jpg';
-import whoItIsForImage2 from '../assets/images/who-it-is-for-2.jpg';
+import illustration1 from '../assets/images/who-it-is-for-1.jpg';
+import illustration2 from '../assets/images/who-it-is-for-2.jpg';
 
 const WhoItIsFor: React.FC = () => {
   return (
-    <section className="who-it-is-for">
+    <section className="who-its-for-section" id="who-its-for">
       <div className="container">
-        <div className="who-it-is-for-header">
-          <h2 className="section-subtitle">Who It's For</h2>
-          <h1 className="section-title">Made for People Like You</h1>
-        </div>
+        <h4>WHO IT'S FOR</h4>
+        <h2>Made for <em>Sales Teams Like Yours</em></h2>
         
-        <div className="who-it-is-for-content">
-          <div className="who-it-is-for-column">
-            <div className="column-background">
-              <img src={whoItIsForImage1} alt="Who it's for" />
-            </div>
-            <div className="column-content">
-              <h3>This Is for You If...</h3>
-              <div className="tags-container">
-                <span className="tag">You're an entrepreneur, solopreneur, or freelancer</span>
-                <span className="tag">You crave honest feedback and outside perspective</span>
-                <span className="tag">You want to help others while evolving yourself</span>
-                <span className="tag">You value real conversations over shallow networking</span>
-              </div>
-            </div>
+        <div className="cards-wrapper">
+          {/* Left Card */}
+          <div className="card for-you">
+            <h3>This <em>Is for You</em> If...</h3>
+            <ul>
+              <li>You're a <strong>sales team drowning in unqualified leads</strong></li>
+              <li>You crave <strong>automated lead qualification</strong> and scoring</li>
+              <li>You want to <strong>focus on hot leads</strong> while AI handles the rest</li>
+              <li>You value <strong>voice-first follow-up</strong> over repetitive emails</li>
+            </ul>
+            <img src={illustration1} alt="For you illustration" />
           </div>
-          
-          <div className="who-it-is-for-column">
-            <div className="column-background">
-              <img src={whoItIsForImage2} alt="Who it's not for" />
-            </div>
-            <div className="column-content">
-              <h3>This Is NOT for You If...</h3>
-              <div className="tags-container">
-                <span className="tag">You're just looking to promote your business</span>
-                <span className="tag">You can't commit to regular attendance</span>
-                <span className="tag">You're not open to giving or receiving feedback</span>
-                <span className="tag">You prefer passive learning to active participation</span>
-              </div>
-            </div>
+
+          {/* Right Card */}
+          <div className="card not-for-you">
+            <h3>This Is <em>NOT</em> for You If...</h3>
+            <ul>
+              <li>You're just looking to promote your business</li>
+              <li>You can't commit to CRM integration</li>
+              <li>You're not open to AI-powered automation</li>
+              <li>You prefer manual lead sorting to smart workflows</li>
+            </ul>
+            <img src={illustration2} alt="Not for you illustration" />
           </div>
         </div>
       </div>

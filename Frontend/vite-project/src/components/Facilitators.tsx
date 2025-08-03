@@ -8,7 +8,7 @@ import facilitator4 from '../assets/images/facilitator-4.jpg';
 const Facilitators: React.FC = () => {
   return (
     <section className="facilitators">
-      <div className="container">
+      <div className="facilitators-container">
         <div className="facilitators-header">
           <h2 className="section-subtitle">Your Hosts & Guides</h2>
           <h1 className="section-title">Meet Your Facilitators</h1>

@@ -7,15 +7,15 @@ const Navigation: React.FC = () => {
       <div className="container">
         <div className="nav-content">
           <div className="nav-logo">
-            <h1>Alliatus</h1>
+            <h1>VocalQualify</h1>
           </div>
           
           <div className="nav-menu">
             <a href="#home" className="nav-link">Home</a>
-            <a href="#about" className="nav-link">About</a>
+            <a href="#features" className="nav-link">Features</a>
             <a href="#how-it-works" className="nav-link">How it works</a>
-            <a href="#member-stories" className="nav-link">Member stories</a>
-            <a href="#events" className="nav-link">Events</a>
+            <a href="#pricing" className="nav-link">Pricing</a>
+            <a href="#contact" className="nav-link">Contact</a>
           </div>
           
           <div className="nav-auth">

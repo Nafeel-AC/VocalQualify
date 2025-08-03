@@ -1,17 +1,52 @@
 .facilitators {
   padding: 80px 0;
-  background: #F7F7F7;
+  background: var(--bg-secondary);
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.facilitators-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .facilitators-header {
   text-align: center;
   margin-bottom: 60px;
+  width: 100%;
+}
+
+.section-subtitle {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
 }
 
 .facilitators-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+  width: 100%;
+  justify-items: center;
 }
 
 .facilitator-card {
@@ -19,11 +54,12 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-width: 280px;
 }
 
 .facilitator-image {
-  width: 310px;
-  height: 310px;
+  width: 280px;
+  height: 280px;
   border-radius: 24px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -36,32 +72,32 @@
 }
 
 .facilitator-info {
-  max-width: 310px;
+  max-width: 280px;
 }
 
 .facilitator-name {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1.33;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 10px;
 }
 
 .facilitator-title {
   font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #303030;
+  color: var(--text-primary);
   margin-bottom: 20px;
 }
 
 .facilitator-description {
   font-family: 'Work Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  color: #303030;
+  color: var(--text-primary);
 }
 
 /* Responsive Design */
@@ -72,8 +108,12 @@
   }
   
   .facilitator-image {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .facilitator-card {
+    max-width: 250px;
   }
 }
 
@@ -82,40 +122,64 @@
     padding: 60px 0;
   }
   
+  .facilitators-container {
+    padding: 0 1rem;
+  }
+  
+  .section-title {
+    font-size: 36px;
+  }
+  
   .facilitators-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
   
   .facilitator-image {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
   }
   
-  .facilitator-name {
-    font-size: 32px;
-  }
-  
-  .facilitator-title {
-    font-size: 14px;
-  }
-  
-  .facilitator-description {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .facilitator-image {
-    width: 200px;
-    height: 200px;
+  .facilitator-card {
+    max-width: 220px;
   }
   
   .facilitator-name {
     font-size: 28px;
   }
   
+  .facilitator-title {
+    font-size: 12px;
+  }
+  
   .facilitator-description {
-    font-size: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .facilitators-container {
+    padding: 0 0.8rem;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .facilitator-image {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .facilitator-card {
+    max-width: 200px;
+  }
+  
+  .facilitator-name {
+    font-size: 24px;
+  }
+  
+  .facilitator-description {
+    font-size: 13px;
   }
 } 

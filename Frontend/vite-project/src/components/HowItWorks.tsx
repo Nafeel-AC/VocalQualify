@@ -7,69 +7,60 @@ const HowItWorks: React.FC = () => {
     <section className="how-it-works" id="how-it-works">
       <div className="container">
         <div className="how-it-works-header">
-          <h2 className="section-subtitle">How It Works</h2>
-          <h1 className="section-title">From Application to Transformation — Step by Step</h1>
+          <h2 className="section-subtitle">HOW IT WORKS</h2>
+          <h1 className="section-title">
+            From Lead to Qualified — <span className="title-emphasis">Step by Step</span>
+          </h1>
         </div>
         
-        <div className="how-it-works-content">
-          <div className="steps-container">
-            <div className="step">
-              <div className="step-number">01</div>
-              <div className="step-content">
-                <h3>Apply Online</h3>
-                <p>Tell us about your goals, background, and what kind of support you're seeking.</p>
-              </div>
-            </div>
-            
-            <div className="step">
-              <div className="step-number">02</div>
-              <div className="step-content">
-                <h3>Get Matched</h3>
-                <p>We carefully place you in a mastermind circle of 5–6 aligned members.</p>
-              </div>
-            </div>
-            
-            <div className="step">
-              <div className="step-number">03</div>
-              <div className="step-content">
-                <h3>Join Bi-Weekly Sessions</h3>
-                <p>Meet over Zoom for structured, focused conversations led by a trained host.</p>
-              </div>
-            </div>
-            
-            <div className="step">
-              <div className="step-number">04</div>
-              <div className="step-content">
-                <h3>Grow With Accountability</h3>
-                <p>Set goals, stay on track, and get continuous feedback from your circle.</p>
-              </div>
+        <div className="layout">
+          <div className="card apply-online">
+            <div className="step-number">01</div>
+            <div className="step-content">
+              <h3>LEAD INTAKE</h3>
+              <p>Collect leads from web forms, ads, or marketing platforms via n8n webhooks.</p>
             </div>
           </div>
           
-          <div className="how-it-works-image">
-            <img src={howItWorksImage} alt="How it works" className="rounded-image" />
-            <div className="image-decoration">
-              <div className="star-decoration"></div>
-              <div className="dots">
-                <div className="dot"></div>
-                <div className="dot"></div>
-                <div className="dot"></div>
-                <div className="dot"></div>
-              </div>
+          <div className="card get-matched">
+            <div className="step-number">02</div>
+            <div className="step-content">
+              <h3>AI EVALUATION</h3>
+              <p>LangGraph agents analyze leads based on budget, timeline, and business needs.</p>
             </div>
           </div>
-        </div>
-        
-        <div className="whats-included">
-          <h3>what's included</h3>
-          <div className="included-content">
-            <p>
-              Private online community<br/>
-              Goal-tracking and reflection tools<br/>
-              Access to session recordings (optional for privacy)<br/>
-              Session prep templates & prompts<br/>
-              Library of expert resources
-            </p>
+          
+          <div className="card join-sessions">
+            <div className="step-number">03</div>
+            <div className="step-content">
+              <h3>VOICE FOLLOW-UP</h3>
+              <p>VAPI automatically calls leads that need more information using natural voice AI.</p>
+            </div>
+          </div>
+          
+          <div className="card grow">
+            <div className="step-number">04</div>
+            <div className="step-content">
+              <h3>CRM SYNC & NOTIFY</h3>
+              <p>Update lead scores in CRM and notify sales team of hot leads automatically.</p>
+            </div>
+          </div>
+          
+          <div className="card image-section">
+            <img src={howItWorksImage} alt="How it works" className="main-image" />
+          </div>
+          
+          <div className="card whats-included">
+            <h3>WHAT'S INCLUDED</h3>
+            <div className="included-content">
+              <p>
+                Smart lead qualification with LangGraph<br/>
+                Voice-based follow-up using VAPI<br/>
+                Real-time CRM integration (HubSpot, Zoho)<br/>
+                Automated notifications & task creation<br/>
+                Firebase-powered data storage & sync
+              </p>
+            </div>
           </div>
         </div>
       </div>
