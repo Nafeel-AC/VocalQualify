@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FAQ.css';
+import faqImage from '../assets/images/faq-image.jpg';
 
 const FAQ: React.FC = () => {
   const [activeItem, setActiveItem] = useState(0);
@@ -60,7 +61,7 @@ const FAQ: React.FC = () => {
             </div>
             
             <div className="faq-illustration">
-              <img src="/src/assets/images/faq-image.jpg" alt="FAQ Illustration" />
+              <img src={faqImage} alt="FAQ Illustration" />
             </div>
           </div>
 
